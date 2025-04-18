@@ -159,7 +159,8 @@ header {
 /* Featured Games Section */
 #featured-games {
     padding: 5rem 5%;
-    background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-middle) 68%, var(--gradient-end) 100%);
+    background: #020024;
+    background: linear-gradient(359deg,rgba(2, 0, 36, 1) 25%, rgba(14, 14, 59, 1) 71%);
 }
 
 .game-grid {
@@ -237,7 +238,8 @@ header {
 /* Newswire Section */
 #newswire {
     padding: 5rem 5%;
-    background: linear-gradient(180deg, var(--gradient-start) 0%, var(--gradient-middle) 68%, var(--gradient-end) 100%);
+    background: #020024;
+background: linear-gradient(178deg,rgba(2, 0, 36, 1) 25%, rgba(9, 9, 121, 1) 89%, rgba(16, 5, 71, 1) 100%);
 }
 
 #newswire h2 {
@@ -265,7 +267,7 @@ header {
 
 .news-image {
     height: 200px;
-    background-image: url(paradise.png);
+    background-image: url(paradise2.png);
     background-size: cover;
     background-position: center;
 }
