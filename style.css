@@ -68,6 +68,7 @@ nav {
     color: var(--text-highlight);
 }
 
+
 .support-btn {
     padding: 0.5rem 1rem;
     background: var(--primary-color);
@@ -133,14 +134,16 @@ header {
 }
 
 .cta-button {
-    background: var(--primary-color);
+    background: #1d4fd8c2;
     color: var(--text-highlight);
+    border-radius: 6px;
 }
 
 .trailer-button {
     background: transparent;
     color: var(--text-secondary);
     border: 2px solid var(--text-secondary);
+    border-radius: 8px;
 }
 
 .cta-button:hover, .trailer-button:hover {
@@ -169,6 +172,13 @@ header {
     position: relative;
     height: 500px;
     overflow: hidden;
+    border-radius: 9px;
+}
+
+.game-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(37,99,235,0.3);
+    border: 2px solid #1d4fd8b9;
 }
 
 .game-card.featured {
@@ -250,6 +260,7 @@ header {
     background: rgba(17,24,39,0.7);
     overflow: hidden;
     border: 1px solid rgba(37,99,235,0.2);
+    border-radius: 9px;
 }
 
 .news-image {
