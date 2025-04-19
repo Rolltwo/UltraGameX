@@ -6,9 +6,8 @@
 }
 
 
-
 .form-container {
-    background: rgba(255, 255, 255, 0.05);
+    background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-middle) 68%, var(--gradient-end) 100%);
     padding: 1rem;
     border-radius: 10px;
     backdrop-filter: blur(10px);
@@ -45,7 +44,7 @@ h2 {
 }
 
 .form-group label {
-    color: #b8b8b8;
+    color: #eee7e7;
     font-size: 0.8rem;
     display: block;
     margin-bottom: 0.2rem;
@@ -98,7 +97,7 @@ button:hover {
 
 .success-message {
     display: none;
-    color: #14e6e6;
+    color: #145ee6;
     text-align: center;
     margin-top: 0.5rem;
     padding: 8px;
