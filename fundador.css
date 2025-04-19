@@ -73,11 +73,11 @@
     text-align: center;
     padding: 40px 0;
     background: #020024;
-    background: linear-gradient(359deg,rgba(2, 0, 36, 1) 25%, rgba(14, 14, 59, 1) 71%);
+    background: linear-gradient(181deg,rgba(2, 0, 36, 1) 25%, rgba(40, 12, 110, 1) 89%, rgba(16, 5, 71, 1) 100%);
 }
 
 .games-title h2 {
-    color: #fff;
+    color:  #fff;
     font-size: 2.5em;
     font-weight: 700;
     text-transform: uppercase;

@@ -160,7 +160,7 @@ header {
 #featured-games {
     padding: 5rem 5%;
     background: #020024;
-    background: linear-gradient(359deg,rgba(2, 0, 36, 1) 25%, rgba(14, 14, 59, 1) 71%);
+background: linear-gradient(2deg,rgba(2, 0, 36, 1) 25%, rgba(40, 12, 110, 1) 89%, rgba(16, 5, 71, 1) 100%);
 }
 
 .game-grid {
