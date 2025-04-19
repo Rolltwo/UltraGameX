@@ -16,7 +16,7 @@
 }
 
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-middle) 68%, var(--gradient-end) 100%);
     color: var(--text-secondary);
     line-height: 1.6;

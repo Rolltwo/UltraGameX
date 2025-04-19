@@ -1,0 +1,99 @@
+.founder-section {
+    padding: 5rem 5%;
+    background: #020024;
+    background: linear-gradient(359deg,rgba(2, 0, 36, 1) 25%, rgba(14, 14, 59, 1) 71%);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.founder-content {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.founder-image {
+    flex: 0 0 400px;
+}
+
+.founder-image img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.founder-image img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(37,99,235,0.3);
+}
+
+.founder-info {
+    flex: 1;
+}
+
+.founder-info h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    color: #1d4fd8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.founder-info h2 {
+    font-size: 1.8em;
+    color: #4a90e2;
+    margin-bottom: 25px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.founder-info p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    color: #e6e6e6;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    letter-spacing: 0.3px;
+}
+
+.games-title {
+    text-align: center;
+    padding: 40px 0;
+    background: #020024;
+    background: linear-gradient(359deg,rgba(2, 0, 36, 1) 25%, rgba(14, 14, 59, 1) 71%);
+}
+
+.games-title h2 {
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .founder-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .founder-image {
+        flex: 0 0 300px;
+        margin-bottom: 30px;
+    }
+}
