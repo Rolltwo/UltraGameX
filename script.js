@@ -1,81 +1,121 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Menu mobile toggle
-    const menuToggle = document.querySelector('.menu-toggle');
+document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.hero-slide');
+    const dots = document.querySelectorAll('.dot');
+    const prevBtn = document.querySelector('.hero-nav.prev');
+    const nextBtn = document.querySelector('.hero-nav.next');
+    let currentSlide = 0;
+    const totalSlides = slides.length;
+
+    // Função para atualizar o slide ativo
+    function updateSlide(index) {
+        slides.forEach(slide => slide.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+        
+        slides[index].classList.add('active');
+        dots[index].classList.add('active');
+        currentSlide = index;
+        if (typeof updateLanguage === 'function') {
+            const lang = localStorage.getItem('preferredLanguage') || 'pt';
+            updateLanguage(lang);
+        }
+    }
+
+    // Função para ir para o próximo slide
+    function nextSlide() {
+        const next = (currentSlide + 1) % totalSlides;
+        updateSlide(next);
+    }
+
+    // Função para ir para o slide anterior
+    function prevSlide() {
+        const prev = (currentSlide - 1 + totalSlides) % totalSlides;
+        updateSlide(prev);
+    }
+
+    // Event listeners para os botões de navegação
+    if (prevBtn && nextBtn) {
+        prevBtn.addEventListener('click', prevSlide);
+        nextBtn.addEventListener('click', nextSlide);
+    }
+
+    // Event listeners para os dots
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => updateSlide(index));
+    });
+
+    // Autoplay do slider
+    let autoplayInterval = setInterval(nextSlide, 5000);
+
+    // Parar autoplay quando o mouse estiver sobre o slider
+    const hero = document.querySelector('.hero');
+    if (hero) {
+        hero.addEventListener('mouseenter', () => clearInterval(autoplayInterval));
+        hero.addEventListener('mouseleave', () => {
+            autoplayInterval = setInterval(nextSlide, 5000);
+        });
+    }
+
+    // Menu Mobile
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const navLinks = document.querySelector('.nav-links');
 
-    if (menuToggle && navLinks) {
-        menuToggle.addEventListener('click', function() {
+    if (mobileMenuBtn && navLinks) {
+        mobileMenuBtn.addEventListener('click', () => {
             navLinks.classList.toggle('active');
+            mobileMenuBtn.classList.toggle('active');
+        });
+
+        // Comportamento do dropdown no mobile
+        const dropdowns = document.querySelectorAll('.dropdown');
+        dropdowns.forEach(dropdown => {
+            const trigger = dropdown.querySelector('.dropdown-trigger');
+            if (trigger) {
+                trigger.addEventListener('click', (e) => {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        dropdown.classList.toggle('active');
+                    }
+                });
+            }
         });
 
         // Fechar menu ao clicar em um link
-        const links = navLinks.querySelectorAll('a');
-        links.forEach(link => {
+        const navLinksItems = document.querySelectorAll('.nav-links a:not(.dropdown-trigger)');
+        navLinksItems.forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
+                mobileMenuBtn.classList.remove('active');
+                dropdowns.forEach(dropdown => dropdown.classList.remove('active'));
             });
         });
 
         // Fechar menu ao clicar fora
-        document.addEventListener('click', function(event) {
-            if (!navLinks.contains(event.target) && !menuToggle.contains(event.target)) {
+        document.addEventListener('click', (e) => {
+            if (!mobileMenuBtn.contains(e.target) && !navLinks.contains(e.target)) {
                 navLinks.classList.remove('active');
+                mobileMenuBtn.classList.remove('active');
+                dropdowns.forEach(dropdown => dropdown.classList.remove('active'));
             }
         });
     }
 
-    // Smooth Scroll for Navigation Links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth'
-                });
-                // Close mobile menu if open
-                navLinks.classList.remove('active');
-            }
-        });
-    });
-
-    // Parallax effect for header and game cards
-    const header = document.querySelector('header');
-    const gameCards = document.querySelectorAll('.game-card');
+    // Botão de voltar ao topo
+    const backToTopBtn = document.getElementById('back-to-top');
     
-    window.addEventListener('scroll', () => {
-        const scrolled = window.pageYOffset;
-        
-        // Parallax for header
-        header.style.backgroundPositionY = scrolled * 0.5 + 'px';
-        
-        // Fade in effect for game cards
-        gameCards.forEach(card => {
-            const cardTop = card.getBoundingClientRect().top;
-            const cardBottom = card.getBoundingClientRect().bottom;
-            const windowHeight = window.innerHeight;
-            
-            if (cardTop < windowHeight && cardBottom > 0) {
-                const scrollPercent = (windowHeight - cardTop) / windowHeight;
-                card.style.opacity = Math.min(scrollPercent, 1);
-                card.style.transform = `translateY(${Math.max(0, 1 - scrollPercent) * 50}px)`;
+    if (backToTopBtn) {
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.style.display = 'flex';
+            } else {
+                backToTopBtn.style.display = 'none';
             }
         });
-    });
 
-    // Hover effect for game cards
-    gameCards.forEach(card => {
-        card.addEventListener('mouseenter', () => {
-            card.querySelector('.game-info').style.transform = 'translateY(-10px)';
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         });
-        
-        card.addEventListener('mouseleave', () => {
-            card.querySelector('.game-info').style.transform = 'translateY(0)';
-        });
-    });
-
-    // Add loading animation
-    window.addEventListener('load', () => {
-        document.body.classList.add('loaded');
-    });
+    }
 });

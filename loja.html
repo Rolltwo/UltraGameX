@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja RollTwo</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="RollTwo-branca.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loja.css">
+    <link rel="stylesheet" href="produto.css">
+    <link rel="stylesheet" href="mobile-menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="RollTwo-branca.png" alt="RollTwo Logo" class="logo-dark">
+            <img src="RollTwo-preta.png" alt="RollTwo Logo" class="logo-light">
+        </div>
+        <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-links">
+            <a href="index.html" data-translate="home">Home</a>
+            <a href="sobre.html" data-translate="about">Sobre</a>
+            <a href="#careers" data-translate="careers">Carreira</a>
+            <a href="loja.html" class="active" data-translate="store">Loja</a>
+        </div>
+        <button id="theme-toggle" class="theme-toggle">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+        </button>
+        <div class="language-selector">
+            <button id="language-toggle" class="language-toggle">
+                <i class="fas fa-globe"></i>
+            </button>
+            <div class="language-dropdown">
+                <a href="#" data-lang="pt">Português (BR)</a>
+                <a href="#" data-lang="pt-pt">Português (PT)</a>
+                <a href="#" data-lang="en">English</a>
+                <a href="#" data-lang="es">Español</a>
+                <a href="#" data-lang="zh">中文</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="store-container">
+        <h1 data-translate="store">Loja RollTwo</h1>
+        
+        <div class="store-categories">
+            <button class="category-btn active" data-category="todos" data-translate="all">Todos</button>
+            <button class="category-btn" data-category="vestuario" data-translate="clothing">Vestuário</button>
+            <button class="category-btn" data-category="acessorios" data-translate="accessories">Acessórios</button>
+            <button class="category-btn" data-category="eletronicos" data-translate="electronics">Eletrônicos</button>
+            <button class="category-btn" data-category="colecionaveis" data-translate="collectibles">Colecionáveis</button>
+            <button class="category-btn" data-category="livros" data-translate="books">Livros</button>
+        </div>
+
+        <header class="hero" style="margin-bottom: 70px; border-radius: 14px;">
+            <button class="hero-nav prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="hero-nav next"><i class="fas fa-chevron-right"></i></button>
+            
+            <div class="hero-slider">
+                <div class="hero-slide active">
+                    <div class="hero-content">
+                        <img src="paradise-logo.png" alt="Paradise" class="hero-logo" style="width: 420px; height: 90px;">
+                        <p><b>Venha criar a história de seu personagem no Paradise!</b></p>
+                        <a href="#" class="cta-button">Saber Mais</a>
+                    </div>
+                    <div class="hero-image" style="background-image: url('paradise.png');"></div>
+                </div>
+    
+                <div class="hero-slide">
+                    <div class="hero-content">
+                        <img src="atlanta-logo.png" alt="Atlanta" class="hero-logo" style="width: 420px; height: 120px;">
+                        <p><b>A premiada franquia de jogos de estratégia retorna com um novo capítulo revolucionário.</b></p>
+                        <a href="#" class="cta-button">Saber Mais</a>
+                    </div>
+                    <div class="hero-image" style="background-image: url('atlanta.png');"></div>
+                </div>
+            </div>
+    
+            <div class="hero-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+            </div>
+        </header>
+
+
+        <div class="products-grid">
+            <!-- Vestuário -->
+            <div class="product-card" data-category="vestuario">
+                <div class="product-image">
+                    <img src="camisaRT-preta.png" alt="Camiseta RollTwo">
+                    <div class="product-overlay">
+                        <button class="add-to-cart-btn" data-translate="addToCart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 data-translate="shirtBlack1">Camiseta RollTwo Preta
+                        <br>
+                        <br>
+                        Modelo 1
+                    </h3>
+                    <p data-translate="shirtDesc">Camiseta oficial com logo da RollTwo</p>
+                    <span class="price">R$ 79,90</span>
+                </div>
+            </div>
+
+            <!-- Vestuário -->
+            <div class="product-card" data-category="vestuario">
+                <div class="product-image">
+                    <img src="camisaRT-branca1.png" alt="Camiseta RollTwo">
+                    <div class="product-overlay">
+                        <button class="add-to-cart-btn" data-translate="addToCart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 data-translate="shirtWhite1">Camiseta RollTwo Branca 
+                        <br>
+                        <br>
+                        Modelo 1
+                    </h3>
+                    <p data-translate="shirtDesc">Camiseta oficial com logo da RollTwo</p>
+                    <span class="price">R$ 79,90</span>
+                </div>
+            </div>
+
+            <!-- Vestuário Modelo 2 Preta -->
+            <div class="product-card" data-category="vestuario">
+                <div class="product-image">
+                    <img src="camisaRT-preta2.png" alt="Camiseta RollTwo">
+                    <div class="product-overlay">
+                        <button class="add-to-cart-btn" data-translate="addToCart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 data-translate="shirtBlack2">Camiseta RollTwo Preta
+                        <br>
+                        <br>
+                        Modelo 2
+                    </h3>
+                    <p data-translate="shirtDesc">Camiseta oficial com logo da RollTwo</p>
+                    <span class="price">R$ 79,90</span>
+                </div>
+            </div>
+
+            <!-- Vestuário Modelo 2 Branca -->
+            <div class="product-card" data-category="vestuario">
+                <div class="product-image">
+                    <img src="camisaRT-branca2.png" alt="Camiseta RollTwo">
+                    <div class="product-overlay">
+                        <button class="add-to-cart-btn" data-translate="addToCart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 data-translate="shirtWhite2">Camiseta RollTwo Branca
+                        <br>
+                        <br>
+                        Modelo 2
+                    </h3>
+                    <p data-translate="shirtDesc">Camiseta oficial com logo da RollTwo</p>
+                    <span class="price">R$ 79,90</span>
+                </div>
+            </div>
+
+            <!-- Acessórios -->
+            <div class="product-card" data-category="acessorios">
+                <div class="product-image">
+                    <img src="headset-gaming.png" alt="Headset Gamer">
+                    <div class="product-overlay">
+                        <button class="add-to-cart-btn" data-translate="addToCart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 data-translate="headset">Headset Gamer Pro</h3>
+                    <p data-translate="headsetDesc">Headset profissional com som surround 7.1</p>
+                    <span class="price">R$ 399,90</span>
+                </div>
+            </div>
+
+            <!-- Eletrônicos -->
+            <div class="product-card" data-category="eletronicos">
+                <div class="product-image">
+                    <img src="mouse-gamer.png" alt="Mouse Gamer">
+                    <div class="product-overlay">
+                        <button class="add-to-cart-btn" data-translate="addToCart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 data-translate="mouse">Mouse Gamer RGB</h3>
+                    <p data-translate="mouseDesc">Mouse profissional com 12000 DPI</p>
+                    <span class="price">R$ 249,90</span>
+                </div>
+            </div>
+
+            <!-- Colecionáveis -->
+            <div class="product-card" data-category="colecionaveis">
+                <div class="product-image">
+                    <img src="action-figure.png" alt="Action Figure">
+                    <div class="product-overlay">
+                        <button class="add-to-cart-btn" data-translate="addToCart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 data-translate="figure">Action Figure Paradise</h3>
+                    <p data-translate="figureDesc">Action Figure exclusiva do jogo Paradise</p>
+                    <span class="price">R$ 199,90</span>
+                </div>
+            </div>
+
+                
+
+
+            <!-- Livros -->
+            <div class="product-card" data-category="livros">
+                <div class="product-image">
+                    <img src="livro-aventura.png" alt="Livro de Aventura">
+                    <div class="product-overlay">
+                        <button class="add-to-cart-btn" data-translate="addToCart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 data-translate="book">Livro de Aventura</h3>
+                    <p data-translate="bookDesc">Livro de Aventura exclusivo da RollTwo</p>
+                    <span class="price">R$ 199,90</span>
+                </div>
+            </div>
+            <!-- Mais produtos... -->
+        </div>
+
+        <!-- Carrinho flutuante -->
+        <div class="cart-floating">
+            <button class="cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </button>
+        </div>
+    </main>
+
+    <!-- Overlay do Carrinho -->
+    <div class="cart-overlay">
+        <div class="cart-container">
+            <div class="cart-header">
+                <h2 data-translate="cart">Seu Carrinho</h2>
+                <button class="cart-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="cart-items">
+                <!-- Items serão adicionados dinamicamente -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span data-translate="total">Total:</span>
+                    <span class="cart-total-price">R$ 0,00</span>
+                </div>
+                <button class="cart-checkout" data-translate="checkout">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tela de detalhes do produto -->
+    <div class="product-details-overlay">
+        <div class="product-details-container">
+            <button class="product-details-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="product-details-images">
+                <img src="" alt="" class="product-details-main-image">
+                <div class="product-details-thumbnails">
+                    <!-- Thumbnails serão adicionados dinamicamente -->
+                </div>
+            </div>
+            <div class="product-details-info">
+                <h2 class="product-details-title"></h2>
+                <p class="product-details-price"></p>
+                <p class="product-details-description"></p>
+                
+                <div class="product-details-options">
+                    <!-- Opções de tamanho -->
+                    <div class="product-details-option" id="size-options">
+                        <h3 class="product-details-option-title" data-translate="size">Tamanho</h3>
+                        <div class="product-details-option-buttons">
+                            <!-- Botões de tamanho serão adicionados dinamicamente -->
+                        </div>
+                    </div>
+
+                    <!-- Opções de cor -->
+                    <div class="product-details-option" id="color-options">
+                        <h3 class="product-details-option-title" data-translate="color">Cor</h3>
+                        <div class="product-details-option-buttons">
+                            <!-- Botões de cor serão adicionados dinamicamente -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-details-quantity">
+                    <button class="quantity-btn minus">-</button>
+                    <input type="number" class="quantity-input" value="1" min="1">
+                    <button class="quantity-btn plus">+</button>
+                </div>
+
+                <button class="product-details-add-to-cart" data-translate="addToCart">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4 data-translate="contact">Contato</h4>
+                <p><span data-translate="email">Email</span>: contato@rolltwo.com.br</p>
+                <p><span data-translate="phone">Telefone</span>: (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h4 data-translate="followUs">Siga-nos</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/rolltwobr/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 RollTwo. <span data-translate="allRightsReserved">Todos os direitos reservados.</span></p>
+        </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+    <script src="loja.js"></script>
+    <script src="script.js" defer></script>
+    <script src="produto.js"></script>
+    <script src="language.js" defer></script>
+    <script src="mobile-menu.js" defer></script>
+
+    <!-- Botão de retorno ao topo -->
+    <button id="back-to-top" title="Voltar ao topo" data-translate="backToTop">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <script>
+        document.querySelectorAll('.news-link').forEach((link, idx) => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                // Pegue o artigo correspondente
+                const article = link.closest('.news-card');
+                const title = article.querySelector('h3').innerText;
+                const date = article.querySelector('.news-date').innerText;
+                const img = article.querySelector('img').src;
+                // Aqui você pode adicionar mais detalhes se quiser
+                const details = `
+                    <img src="${img}" alt="" style="width:100%;border-radius:8px;">
+                    <h2>${title}</h2>
+                    <p><b>${date}</b></p>
+                    <p>${link.getAttribute('data-detalhes')}</p>
+                `;
+                document.getElementById('news-modal-details').innerHTML = details;
+                document.getElementById('news-modal').style.display = 'flex';
+            });
+        });
+    
+        // Fechar o modal
+        document.querySelector('.news-modal-close').onclick = function() {
+            document.getElementById('news-modal').style.display = 'none';
+        };
+        // Fechar ao clicar fora do conteúdo
+        document.getElementById('news-modal').onclick = function(e) {
+            if (e.target === this) this.style.display = 'none';
+        };
+        </script>
+</body>
+</html> 

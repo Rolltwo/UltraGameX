@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre a RollTwo.inc</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="RollTwo-branca.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loja.css">
+    <link rel="stylesheet" href="mobile-menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(120deg, #23243a 0%, #1a1a2e 100%);
+        }
+        .about-banner {
+            background: linear-gradient(120deg, #7b2ff2 0%, #f357a8 100%);
+            color: #fff;
+            padding: 3.5rem 2rem 2.5rem 2rem;
+            border-radius: 32px;
+            text-align: center;
+            margin: 2.5rem auto 3rem auto;
+            box-shadow: 0 8px 32px rgba(123,47,242,0.13);
+            max-width: 1000px;
+            position: relative;
+            overflow: hidden;
+        }
+        .about-banner::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: url('RollTwo-branca.png') center 40px/120px no-repeat;
+            opacity: 0.07;
+            transform: translateX(-50%);
+            pointer-events: none;
+        }
+        .about-banner .logo-center {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 1.2rem;
+            filter: drop-shadow(0 2px 8px #0002);
+        }
+        .about-banner h1 {
+            font-size: 2.7rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            position: relative;
+            z-index: 1;
+            animation: fadeInDown 1s cubic-bezier(.77,0,.18,1.01);
+        }
+        .about-banner p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .about-main {
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 0 5% 3rem 5%;
+        }
+        .about-section {
+            background: var(--card-bg, #232323);
+            border-radius: 18px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.09);
+            padding: 2.7rem 2.2rem;
+            margin-bottom: 2.7rem;
+            position: relative;
+        }
+        .about-section:not(:last-child)::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, #7b2ff2 0%, #f357a8 100%);
+            border-radius: 2px;
+            margin: 2.2rem auto 0 auto;
+        }
+        .about-section h3, .about-section h4 {
+            color: #7b2ff2;
+            margin-top: 1.5rem;
+            margin-bottom: 0.7rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.5rem;
+        }
+        .about-section h3 i, .about-section h4 i {
+            color: #f357a8;
+        }
+        .about-section ul {
+            margin: 1rem 0 1.5rem 1.5rem;
+            padding-left: 1.2rem;
+        }
+        .about-section li {
+            margin-bottom: 0.5rem;
+        }
+        .about-section p:last-child {
+            margin-bottom: 0;
+        }
+        @media (max-width: 600px) {
+            .about-banner h1 { font-size: 1.5rem; }
+            .about-main { padding: 0 0.5rem 2rem 0.5rem; }
+            .about-section { padding: 1.2rem 0.7rem; }
+            .about-banner { padding: 2rem 0.5rem 1.5rem 0.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="RollTwo-branca.png" alt="RollTwo Logo" class="logo-dark">
+            <img src="RollTwo-preta.png" alt="RollTwo Logo" class="logo-light">
+        </div>
+        <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-links">
+            <a href="index.html" data-translate="home">Home</a>
+            <a href="sobre.html" class="active" data-translate="about">Sobre</a>
+            <a href="#careers" data-translate="careers">Carreira</a>
+            <a href="loja.html" data-translate="store">Loja</a>
+        </div>
+        <button id="theme-toggle" class="theme-toggle">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+        </button>
+        <div class="language-selector">
+            <button id="language-toggle" class="language-toggle">
+                <i class="fas fa-globe"></i>
+            </button>
+            <div class="language-dropdown">
+                <a href="#" data-lang="pt">Português (BR)</a>
+                <a href="#" data-lang="pt-pt">Português (PT)</a>
+                <a href="#" data-lang="en">English</a>
+                <a href="#" data-lang="es">Español</a>
+                <a href="#" data-lang="zh">中文</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="about-banner">
+        <img src="RollTwo-branca.png" alt="Logo RollTwo" class="logo-center">
+        <h1><i class="fas fa-globe"></i> <span data-translate="aboutTitle">Sobre a RollTwo.inc</span></h1>
+        <p data-translate="aboutSlogan">Holding de tecnologia avançada, protagonista global em experiências digitais imersivas e soluções inovadoras.</p>
+    </div>
+
+    <main class="about-main">
+        <section class="about-section">
+            <h3><i class="fas fa-dna"></i> <span data-translate="aboutInnovation">Inovação no DNA</span></h3>
+            <p data-translate="aboutInnovationText1">Desde sua criação, a RollTwo.inc investe em pesquisa, desenvolvimento e parcerias estratégicas com foco na inovação contínua. A empresa reúne talentos criativos e engenheiros visionários que trabalham juntos para desenvolver produtos e serviços capazes de antecipar tendências e redefinir os padrões do mercado tecnológico.</p>
+            <p data-translate="aboutInnovationText2">Seus principais segmentos incluem:</p>
+            <ul>
+                <li data-translate="aboutInnovationList1">Estúdios de games reconhecidos internacionalmente por títulos que combinam narrativa envolvente, jogabilidade avançada e gráficos de última geração;</li>
+                <li data-translate="aboutInnovationList2">Empresas de software dedicadas à criação de plataformas inteligentes, aplicações corporativas e ferramentas baseadas em IA;</li>
+                <li data-translate="aboutInnovationList3">Projetos de hardware e tecnologia imersiva, incluindo realidade aumentada, virtual e dispositivos interativos.</li>
+            </ul>
+        </section>
+        <section class="about-section">
+            <h3><i class="fas fa-sitemap"></i> <span data-translate="aboutHolding">Uma Holding Estratégica</span></h3>
+            <p data-translate="aboutHoldingText">Como controladora, a RollTwo.inc impulsiona o crescimento das suas subsidiárias por meio de investimentos estruturados, suporte tecnológico e gestão estratégica. Seu modelo operacional é colaborativo, permitindo sinergias entre os negócios para gerar soluções integradas, escaláveis e centradas no usuário.</p>
+        </section>
+        <section class="about-section">
+            <h3><i class="fas fa-globe-europe"></i> <span data-translate="aboutGlobal">Presença Global, Visão de Futuro</span></h3>
+            <p data-translate="aboutGlobalText1">Com operações e parcerias em diversos países, a RollTwo.inc mantém um olhar voltado para o futuro, investindo em sustentabilidade, segurança digital e impacto social. A empresa acredita que a tecnologia deve ser inclusiva, acessível e usada para construir um mundo mais conectado, criativo e inteligente.</p>
+            <p data-translate="aboutGlobalText2"><b>RollTwo.inc — Tecnologia que move ideias, conecta pessoas e transforma o amanhã.</b></p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4 data-translate="contact">Contato</h4>
+                <p><span data-translate="email">Email</span>: contato@rolltwo.com.br</p>
+                <p><span data-translate="phone">Telefone</span>: (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h4 data-translate="followUs">Siga-nos</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/rolltwoinc/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 RollTwo. <span data-translate="allRightsReserved">Todos os direitos reservados.</span></p>
+        </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="language.js" defer></script>
+    <script src="mobile-menu.js" defer></script>
+
+    <script>
+        document.querySelectorAll('.news-link').forEach((link, idx) => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                // Pegue o artigo correspondente
+                const article = link.closest('.news-card');
+                const title = article.querySelector('h3').innerText;
+                const date = article.querySelector('.news-date').innerText;
+                const img = article.querySelector('img').src;
+                // Aqui você pode adicionar mais detalhes se quiser
+                const details = `
+                    <img src="${img}" alt="" style="width:100%;border-radius:8px;">
+                    <h2>${title}</h2>
+                    <p><b>${date}</b></p>
+                    <p>${link.getAttribute('data-detalhes')}</p>
+                `;
+                document.getElementById('news-modal-details').innerHTML = details;
+                document.getElementById('news-modal').style.display = 'flex';
+            });
+        });
+    
+        // Fechar o modal
+        document.querySelector('.news-modal-close').onclick = function() {
+            document.getElementById('news-modal').style.display = 'none';
+        };
+        // Fechar ao clicar fora do conteúdo
+        document.getElementById('news-modal').onclick = function(e) {
+            if (e.target === this) this.style.display = 'none';
+        };
+        </script>
+</body>
+</html> 

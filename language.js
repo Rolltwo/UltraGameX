@@ -1,0 +1,527 @@
+// Objeto com as traduções
+const translations = {
+    pt: {
+        // Navegação
+        games: "Jogos",
+        about: "Sobre",
+        news: "Notícias",
+        careers: "Carreira",
+        store: "Loja",
+        coroa: "Coroa",
+        // Hero Section
+        knowMore: "Saber Mais",
+        paradiseTitle: "Paradise",
+        paradiseDesc: "Venha criar a história de seu personagem no Paradise!",
+        beyweryTitle: "Bey Wery Remastered",
+        beyweryDesc: "A premiada franquia de jogos de estratégia retorna com um novo capítulo revolucionário.",
+        
+        // Jogos em Destaque
+        featuredGames: "Jogos em Destaque",
+        playNow: "Jogar Agora",
+        epicAdventure: "Embarque em uma jornada épica cheia de mistérios e desafios",
+        racingEvolution: "Acelere em pistas incríveis e supere seus limites",
+        action: "Ação",
+        adventure: "Aventura",
+        rpg: "RPG",
+        racing: "Corrida",
+        sport: "Esporte",
+        multiplayer: "Multiplayer",
+        
+        // Notícias
+        newsTitle: "NOTÍCIAS",
+        readMore: "Leia mais",
+        
+        // Footer
+        contact: "Contato",
+        followUs: "Siga-nos",
+        allRightsReserved: "Todos os direitos reservados.",
+        email: "Email",
+        phone: "Telefone",
+        
+        // Loja
+        search: "Buscar",
+        categories: "Categorias",
+        price: "Preço",
+        addToCart: "Adicionar ao Carrinho",
+        viewDetails: "Ver Detalhes",
+        cart: "Carrinho",
+        checkout: "Finalizar Compra",
+        emptyCart: "Carrinho Vazio",
+        total: "Total",
+        all: "Todos",
+        clothing: "Vestuário",
+        accessories: "Acessórios",
+        electronics: "Eletrônicos",
+        collectibles: "Colecionáveis",
+        books: "Livros",
+        newsDate1: "28 de fevereiro de 2025",
+        newsDate2: "28 de fevereiro de 2025",
+        newsDate3: "28 de fevereiro de 2025",
+        newsTitle1: "PGA TOUR® 2K25 Tees Off Worldwide; Disponível agora",
+        newsTitle2: "PGA TOUR® 2K25 Tees Off Worldwide; Disponível agora",
+        newsTitle3: "PGA TOUR® 2K25 Tees Off Worldwide; Disponível agora",
+        newsDate4: "17 de abril de 2025",
+        newsDate5: "7 de março de 2025",
+        newsDate6: "3 de março de 2025",
+        newsTitle4: "Roll Two, Inc. divulgará os resultados do quarto trimestre",
+        newsTitle5: "Paradise no WWE® 2K25: Bloodline Edition e Deadman Edition",
+        newsTitle6: "Rockstar Games vai adquirir a Video Games Deluxe",
+        shirtBlack1: "Camiseta RollTwo Preta\nModelo 1",
+        shirtWhite1: "Camiseta RollTwo Branca\nModelo 1",
+        shirtBlack2: "Camiseta RollTwo Preta\nModelo 2",
+        shirtWhite2: "Camiseta RollTwo Branca\nModelo 2",
+        shirtDesc: "Camiseta oficial com logo da RollTwo",
+        headset: "Headset Gamer Pro",
+        headsetDesc: "Headset profissional com som surround 7.1",
+        mouse: "Mouse Gamer RGB",
+        mouseDesc: "Mouse profissional com 12000 DPI",
+        figure: "Action Figure Paradise",
+        figureDesc: "Action Figure exclusiva do jogo Paradise",
+        book: "Livro de Aventura",
+        bookDesc: "Livro de Aventura exclusivo da RollTwo",
+        size: "Tamanho",
+        color: "Cor",
+        backToTop: "Voltar ao topo",
+        home: "Home",
+        aboutTitle: "Sobre a RollTwo.inc",
+        aboutSlogan: "Holding de tecnologia avançada, protagonista global em experiências digitais imersivas e soluções inovadoras.",
+        aboutInnovation: "Inovação no DNA",
+        aboutInnovationText1: "Desde sua criação, a RollTwo.inc investe em pesquisa, desenvolvimento e parcerias estratégicas com foco na inovação contínua. A empresa reúne talentos criativos e engenheiros visionários que trabalham juntos para desenvolver produtos e serviços capazes de antecipar tendências e redefinir os padrões do mercado tecnológico.",
+        aboutInnovationText2: "Seus principais segmentos incluem:",
+        aboutInnovationList1: "Estúdios de games reconhecidos internacionalmente por títulos que combinam narrativa envolvente, jogabilidade avançada e gráficos de última geração;",
+        aboutInnovationList2: "Empresas de software dedicadas à criação de plataformas inteligentes, aplicações corporativas e ferramentas baseadas em IA;",
+        aboutInnovationList3: "Projetos de hardware e tecnologia imersiva, incluindo realidade aumentada, virtual e dispositivos interativos.",
+        aboutHolding: "Uma Holding Estratégica",
+        aboutHoldingText: "Como controladora, a RollTwo.inc impulsiona o crescimento das suas subsidiárias por meio de investimentos estruturados, suporte tecnológico e gestão estratégica. Seu modelo operacional é colaborativo, permitindo sinergias entre os negócios para gerar soluções integradas, escaláveis e centradas no usuário.",
+        aboutGlobal: "Presença Global, Visão de Futuro",
+        aboutGlobalText1: "Com operações e parcerias em diversos países, a RollTwo.inc mantém um olhar voltado para o futuro, investindo em sustentabilidade, segurança digital e impacto social. A empresa acredita que a tecnologia deve ser inclusiva, acessível e usada para construir um mundo mais conectado, criativo e inteligente.",
+        aboutGlobalText2: "RollTwo.inc — Tecnologia que move ideias, conecta pessoas e transforma o amanhã."
+    },
+    en: {
+        // Navigation
+        games: "Games",
+        about: "About",
+        news: "News",
+        careers: "Careers",
+        store: "Store",
+        coroa: "Crown",
+        // Hero Section
+        knowMore: "Learn More",
+        paradiseTitle: "Paradise",
+        paradiseDesc: "Come create your character's story in Paradise!",
+        beyweryTitle: "Bey Wery Remastered",
+        beyweryDesc: "The award-winning strategy game franchise returns with a revolutionary new chapter.",
+        
+        // Featured Games
+        featuredGames: "Featured Games",
+        playNow: "Play Now",
+        epicAdventure: "Embark on an epic journey full of mysteries and challenges",
+        racingEvolution: "Accelerate on amazing tracks and push your limits",
+        action: "Action",
+        adventure: "Adventure",
+        rpg: "RPG",
+        racing: "Racing",
+        sport: "Sport",
+        multiplayer: "Multiplayer",
+        
+        // News
+        newsTitle: "NEWS",
+        readMore: "Read more",
+        
+        // Footer
+        contact: "Contact",
+        followUs: "Follow Us",
+        allRightsReserved: "All rights reserved.",
+        email: "Email",
+        phone: "Phone",
+        
+        // Store
+        search: "Search",
+        categories: "Categories",
+        price: "Price",
+        addToCart: "Add to Cart",
+        viewDetails: "View Details",
+        cart: "Cart",
+        checkout: "Checkout",
+        emptyCart: "Empty Cart",
+        total: "Total",
+        all: "All",
+        clothing: "Clothing",
+        accessories: "Accessories",
+        electronics: "Electronics",
+        collectibles: "Collectibles",
+        books: "Books",
+        newsDate1: "February 28, 2025",
+        newsDate2: "February 28, 2025",
+        newsDate3: "February 28, 2025",
+        newsTitle1: "PGA TOUR® 2K25 Tees Off Worldwide; Available now",
+        newsTitle2: "PGA TOUR® 2K25 Tees Off Worldwide; Available now",
+        newsTitle3: "PGA TOUR® 2K25 Tees Off Worldwide; Available now",
+        newsDate4: "April 17, 2025",
+        newsDate5: "March 7, 2025",
+        newsDate6: "March 3, 2025",
+        newsTitle4: "Roll Two, Inc. will announce Q4 results",
+        newsTitle5: "Paradise in WWE® 2K25: Bloodline Edition and Deadman Edition",
+        newsTitle6: "Rockstar Games to acquire Video Games Deluxe",
+        shirtBlack1: "RollTwo Black T-shirt\nModel 1",
+        shirtWhite1: "RollTwo White T-shirt\nModel 1",
+        shirtBlack2: "RollTwo Black T-shirt\nModel 2",
+        shirtWhite2: "RollTwo White T-shirt\nModel 2",
+        shirtDesc: "Official t-shirt with RollTwo logo",
+        headset: "Pro Gaming Headset",
+        headsetDesc: "Professional headset with 7.1 surround sound",
+        mouse: "RGB Gaming Mouse",
+        mouseDesc: "Professional mouse with 12000 DPI",
+        figure: "Paradise Action Figure",
+        figureDesc: "Exclusive Paradise game action figure",
+        book: "Adventure Book",
+        bookDesc: "Exclusive RollTwo Adventure Book",
+        size: "Size",
+        color: "Color",
+        backToTop: "Back to top",
+        home: "Home",
+        aboutTitle: "About RollTwo.inc",
+        aboutSlogan: "Advanced technology holding, global leader in immersive digital experiences and innovative solutions.",
+        aboutInnovation: "Innovation in Our DNA",
+        aboutInnovationText1: "Since its creation, RollTwo.inc has invested in research, development, and strategic partnerships focused on continuous innovation. The company brings together creative talents and visionary engineers who work together to develop products and services capable of anticipating trends and redefining the standards of the technology market.",
+        aboutInnovationText2: "Its main segments include:",
+        aboutInnovationList1: "Game studios internationally recognized for titles that combine engaging storytelling, advanced gameplay, and cutting-edge graphics;",
+        aboutInnovationList2: "Software companies dedicated to creating intelligent platforms, corporate applications, and AI-based tools;",
+        aboutInnovationList3: "Hardware and immersive technology projects, including augmented reality, virtual reality, and interactive devices.",
+        aboutHolding: "A Strategic Holding",
+        aboutHoldingText: "As a parent company, RollTwo.inc drives the growth of its subsidiaries through structured investments, technological support, and strategic management. Its operational model is collaborative, allowing synergies between businesses to generate integrated, scalable, and user-centered solutions.",
+        aboutGlobal: "Global Presence, Future Vision",
+        aboutGlobalText1: "With operations and partnerships in several countries, RollTwo.inc keeps an eye on the future, investing in sustainability, digital security, and social impact. The company believes that technology should be inclusive, accessible, and used to build a more connected, creative, and intelligent world.",
+        aboutGlobalText2: "RollTwo.inc — Technology that moves ideas, connects people, and transforms tomorrow."
+    },
+    es: {
+        // Navegación
+        games: "Juegos",
+        about: "Acerca de",
+        news: "Noticias",
+        careers: "Carreras",
+        store: "Tienda",
+        coroa: "Corona",
+        // Sección Hero
+        knowMore: "Saber Más",
+        paradiseTitle: "Paradise",
+        paradiseDesc: "¡Ven a crear la historia de tu personaje en Paradise!",
+        beyweryTitle: "Bey Wery Remastered",
+        beyweryDesc: "La galardonada franquicia de juegos de estrategia regresa con un nuevo capítulo revolucionario.",
+        
+        // Juegos Destacados
+        featuredGames: "Juegos Destacados",
+        playNow: "Jugar Ahora",
+        epicAdventure: "Embárcate en un viaje épico lleno de misterios y desafíos",
+        racingEvolution: "Acelera en pistas increíbles y supera tus límites",
+        action: "Acción",
+        adventure: "Aventura",
+        rpg: "RPG",
+        racing: "Carreras",
+        sport: "Deportes",
+        multiplayer: "Multijugador",
+        
+        // Noticias
+        newsTitle: "NOTICIAS",
+        readMore: "Leer más",
+        
+        // Pie de página
+        contact: "Contacto",
+        followUs: "Síguenos",
+        allRightsReserved: "Todos los derechos reservados.",
+        email: "Correo",
+        phone: "Teléfono",
+        
+        // Tienda
+        search: "Buscar",
+        categories: "Categorías",
+        price: "Precio",
+        addToCart: "Añadir al Carrito",
+        viewDetails: "Ver Detalles",
+        cart: "Carrito",
+        checkout: "Finalizar Compra",
+        emptyCart: "Carrito Vacío",
+        total: "Total",
+        all: "Todos",
+        clothing: "Ropa",
+        accessories: "Accesorios",
+        electronics: "Electrónicos",
+        collectibles: "Coleccionables",
+        books: "Libros",
+        newsDate1: "28 de febrero de 2025",
+        newsDate2: "28 de febrero de 2025",
+        newsDate3: "28 de febrero de 2025",
+        newsTitle1: "PGA TOUR® 2K25 Tees Off Worldwide; Disponible ahora",
+        newsTitle2: "PGA TOUR® 2K25 Tees Off Worldwide; Disponible ahora",
+        newsTitle3: "PGA TOUR® 2K25 Tees Off Worldwide; Disponible ahora",
+        newsDate4: "17 de abril de 2025",
+        newsDate5: "7 de marzo de 2025",
+        newsDate6: "3 de marzo de 2025",
+        newsTitle4: "Roll Two, Inc. publicará los resultados del cuarto trimestre",
+        newsTitle5: "Paradise en WWE® 2K25: Bloodline Edition y Deadman Edition",
+        newsTitle6: "Rockstar Games adquirirá Video Games Deluxe",
+        shirtBlack1: "Camiseta RollTwo Negra\nModelo 1",
+        shirtWhite1: "Camiseta RollTwo Blanca\nModelo 1",
+        shirtBlack2: "Camiseta RollTwo Negra\nModelo 2",
+        shirtWhite2: "Camiseta RollTwo Blanca\nModelo 2",
+        shirtDesc: "Camiseta oficial con logo de RollTwo",
+        headset: "Auriculares Gamer Pro",
+        headsetDesc: "Auriculares profesionales con sonido envolvente 7.1",
+        mouse: "Ratón Gamer RGB",
+        mouseDesc: "Ratón profesional con 12000 DPI",
+        figure: "Figura de Acción Paradise",
+        figureDesc: "Figura exclusiva del juego Paradise",
+        book: "Libro de Aventura",
+        bookDesc: "Libro de Aventura exclusivo de RollTwo",
+        size: "Talla",
+        color: "Color",
+        backToTop: "Volver arriba",
+        home: "Inicio",
+        aboutTitle: "Sobre RollTwo.inc",
+        aboutSlogan: "Holding de tecnología avanzada, protagonista global en experiencias digitales inmersivas y soluciones innovadoras.",
+        aboutInnovation: "Innovación en el ADN",
+        aboutInnovationText1: "Desde su creación, RollTwo.inc invierte en investigación, desarrollo y alianzas estratégicas con foco en la innovación continua. La empresa reúne talentos creativos e ingenieros visionarios que trabajan juntos para desarrollar productos y servicios capaces de anticipar tendencias y redefinir los estándares del mercado tecnológico.",
+        aboutInnovationText2: "Sus principales segmentos incluyen:",
+        aboutInnovationList1: "Estudios de juegos reconocidos internacionalmente por títulos que combinan narrativa envolvente, jugabilidad avanzada y gráficos de última generación;",
+        aboutInnovationList2: "Empresas de software dedicadas a la creación de plataformas inteligentes, aplicaciones corporativas y herramientas basadas en IA;",
+        aboutInnovationList3: "Proyectos de hardware y tecnología inmersiva, incluyendo realidad aumentada, virtual y dispositivos interactivos.",
+        aboutHolding: "Una Holding Estratégica",
+        aboutHoldingText: "Como controladora, RollTwo.inc impulsa el crecimiento de sus subsidiarias mediante inversiones estructuradas, soporte tecnológico y gestión estratégica. Su modelo operativo es colaborativo, permitiendo sinergias entre los negocios para generar soluciones integradas, escalables y centradas en el usuario.",
+        aboutGlobal: "Presencia Global, Visión de Futuro",
+        aboutGlobalText1: "Con operaciones y alianzas en varios países, RollTwo.inc mantiene la mirada puesta en el futuro, invirtiendo en sostenibilidad, seguridad digital e impacto social. La empresa cree que la tecnología debe ser inclusiva, accesible y utilizada para construir un mundo más conectado, creativo e inteligente.",
+        aboutGlobalText2: "RollTwo.inc — Tecnología que mueve ideas, conecta personas y transforma el mañana."
+    },
+    zh: {
+        games: "游戏",
+        about: "关于",
+        news: "新闻",
+        careers: "招聘",
+        store: "商店",
+        coroa: "皇冠",
+        knowMore: "了解更多",
+        paradiseTitle: "天堂",
+        paradiseDesc: "来创造你在天堂的角色故事吧！",
+        beyweryTitle: "Bey Wery 重制版",
+        beyweryDesc: "屡获殊荣的策略游戏系列带来革命性新篇章。",
+        featuredGames: "精选游戏",
+        playNow: "立即游玩",
+        epicAdventure: "踏上充满神秘和挑战的史诗之旅",
+        racingEvolution: "在精彩赛道上加速，突破极限",
+        action: "动作",
+        adventure: "冒险",
+        rpg: "角色扮演",
+        racing: "竞速",
+        sport: "体育",
+        multiplayer: "多人",
+        newsTitle: "新闻",
+        readMore: "阅读更多",
+        contact: "联系",
+        followUs: "关注我们",
+        allRightsReserved: "保留所有权利。",
+        email: "邮箱",
+        phone: "电话",
+        search: "搜索",
+        categories: "分类",
+        price: "价格",
+        addToCart: "加入购物车",
+        viewDetails: "查看详情",
+        cart: "购物车",
+        checkout: "结账",
+        emptyCart: "购物车为空",
+        total: "总计",
+        all: "全部",
+        clothing: "服装",
+        accessories: "配件",
+        electronics: "电子产品",
+        collectibles: "收藏品",
+        books: "书籍",
+        newsDate1: "2025年2月28日",
+        newsDate2: "2025年2月28日",
+        newsDate3: "2025年2月28日",
+        newsTitle1: "PGA TOUR® 2K25 全球发售；现已上市",
+        newsTitle2: "PGA TOUR® 2K25 全球发售；现已上市",
+        newsTitle3: "PGA TOUR® 2K25 全球发售；现已上市",
+        newsDate4: "2025年4月17日",
+        newsDate5: "2025年3月7日",
+        newsDate6: "2025年3月3日",
+        newsTitle4: "Roll Two, Inc. 公布第四季度业绩",
+        newsTitle5: "Paradise 登陆 WWE® 2K25: Bloodline Edition 和 Deadman Edition",
+        newsTitle6: "Rockstar Games 将收购 Video Games Deluxe",
+        shirtBlack1: "RollTwo 黑色T恤\n款式1",
+        shirtWhite1: "RollTwo 白色T恤\n款式1",
+        shirtBlack2: "RollTwo 黑色T恤\n款式2",
+        shirtWhite2: "RollTwo 白色T恤\n款式2",
+        shirtDesc: "RollTwo官方标志T恤",
+        headset: "专业游戏耳机",
+        headsetDesc: "7.1环绕声专业耳机",
+        mouse: "RGB游戏鼠标",
+        mouseDesc: "12000 DPI专业鼠标",
+        figure: "Paradise手办",
+        figureDesc: "Paradise游戏独家手办",
+        book: "冒险书籍",
+        bookDesc: "RollTwo独家冒险书籍",
+        size: "尺码",
+        color: "颜色",
+        backToTop: "返回顶部",
+        home: "首页",
+        aboutTitle: "关于 RollTwo.inc",
+        aboutSlogan: "先进科技控股公司，全球沉浸式数字体验和创新解决方案的引领者。",
+        aboutInnovation: "创新基因",
+        aboutInnovationText1: "自成立以来，RollTwo.inc 一直专注于研发、创新和战略合作。公司汇聚了创意人才和有远见的工程师，共同开发能够引领趋势、重塑科技市场标准的产品和服务。",
+        aboutInnovationText2: "其主要领域包括：",
+        aboutInnovationList1: "国际知名游戏工作室，作品兼具引人入胜的叙事、先进玩法和顶级画面；",
+        aboutInnovationList2: "专注于智能平台、企业应用和AI工具开发的软件公司；",
+        aboutInnovationList3: "硬件与沉浸式科技项目，包括增强现实、虚拟现实和交互设备。",
+        aboutHolding: "战略控股公司",
+        aboutHoldingText: "作为控股公司，RollTwo.inc 通过结构化投资、技术支持和战略管理推动子公司成长。其协作型运营模式促进业务协同，打造集成、可扩展、以用户为中心的解决方案。",
+        aboutGlobal: "全球布局，未来愿景",
+        aboutGlobalText1: "RollTwo.inc 在多个国家开展业务与合作，关注未来，投资于可持续发展、数字安全和社会影响。公司相信科技应当包容、易用，用于建设更互联、更具创造力和智能的世界。",
+        aboutGlobalText2: "RollTwo.inc — 推动创意、连接人群、改变未来的科技。"
+    },
+    "pt-pt": {
+        games: "Jogos",
+        about: "Sobre",
+        news: "Notícias",
+        careers: "Carreiras",
+        store: "Loja",
+        knowMore: "Saber Mais",
+        paradiseTitle: "Paradise",
+        paradiseDesc: "Venha criar a história da sua personagem no Paradise!",
+        beyweryTitle: "Bey Wery Remastered",
+        beyweryDesc: "A premiada série de jogos de estratégia regressa com um novo capítulo revolucionário.",
+        featuredGames: "Jogos em Destaque",
+        playNow: "Jogar Agora",
+        epicAdventure: "Embarca numa jornada épica cheia de mistérios e desafios",
+        racingEvolution: "Acelera em pistas incríveis e supera os teus limites",
+        action: "Ação",
+        adventure: "Aventura",
+        rpg: "RPG",
+        racing: "Corrida",
+        sport: "Desporto",
+        multiplayer: "Multijogador",
+        newsTitle: "NOTÍCIAS",
+        readMore: "Ler mais",
+        contact: "Contacto",
+        followUs: "Segue-nos",
+        allRightsReserved: "Todos os direitos reservados.",
+        email: "Email",
+        phone: "Telefone",
+        search: "Procurar",
+        categories: "Categorias",
+        price: "Preço",
+        addToCart: "Adicionar ao Carrinho",
+        viewDetails: "Ver Detalhes",
+        cart: "Carrinho",
+        checkout: "Finalizar Compra",
+        emptyCart: "Carrinho Vazio",
+        total: "Total",
+        all: "Todos",
+        clothing: "Vestuário",
+        accessories: "Acessórios",
+        electronics: "Eletrónica",
+        collectibles: "Colecionáveis",
+        books: "Livros",
+        newsDate1: "28 de fevereiro de 2025",
+        newsDate2: "28 de fevereiro de 2025",
+        newsDate3: "28 de fevereiro de 2025",
+        newsTitle1: "PGA TOUR® 2K25 Tees Off Worldwide; Disponível agora",
+        newsTitle2: "PGA TOUR® 2K25 Tees Off Worldwide; Disponível agora",
+        newsTitle3: "PGA TOUR® 2K25 Tees Off Worldwide; Disponível agora",
+        newsDate4: "17 de abril de 2025",
+        newsDate5: "7 de março de 2025",
+        newsDate6: "3 de março de 2025",
+        newsTitle4: "Roll Two, Inc. divulgará os resultados do quarto trimestre",
+        newsTitle5: "Paradise no WWE® 2K25: Bloodline Edition e Deadman Edition",
+        newsTitle6: "Rockstar Games vai adquirir a Video Games Deluxe",
+        shirtBlack1: "Camisola RollTwo Preta\nModelo 1",
+        shirtWhite1: "Camisola RollTwo Branca\nModelo 1",
+        shirtBlack2: "Camisola RollTwo Preta\nModelo 2",
+        shirtWhite2: "Camisola RollTwo Branca\nModelo 2",
+        shirtDesc: "Camisola oficial com logótipo da RollTwo",
+        headset: "Headset Gamer Pro",
+        headsetDesc: "Headset profissional com som surround 7.1",
+        mouse: "Rato Gamer RGB",
+        mouseDesc: "Rato profissional com 12000 DPI",
+        figure: "Action Figure Paradise",
+        figureDesc: "Action Figure exclusiva do jogo Paradise",
+        book: "Livro de Aventura",
+        bookDesc: "Livro de Aventura exclusivo da RollTwo",
+        size: "Tamanho",
+        color: "Cor",
+        backToTop: "Voltar ao topo",
+        home: "Início",
+        aboutTitle: "Sobre a RollTwo.inc",
+        aboutSlogan: "Holding de tecnologia avançada, protagonista global em experiências digitais imersivas e soluções inovadoras.",
+        aboutInnovation: "Inovação no ADN",
+        aboutInnovationText1: "Desde a sua criação, a RollTwo.inc investe em investigação, desenvolvimento e parcerias estratégicas com foco na inovação contínua. A empresa reúne talentos criativos e engenheiros visionários que trabalham juntos para desenvolver produtos e serviços capazes de antecipar tendências e redefinir os padrões do mercado tecnológico.",
+        aboutInnovationText2: "Os seus principais segmentos incluem:",
+        aboutInnovationList1: "Estúdios de jogos reconhecidos internacionalmente por títulos que combinam narrativa envolvente, jogabilidade avançada e gráficos de última geração;",
+        aboutInnovationList2: "Empresas de software dedicadas à criação de plataformas inteligentes, aplicações corporativas e ferramentas baseadas em IA;",
+        aboutInnovationList3: "Projetos de hardware e tecnologia imersiva, incluindo realidade aumentada, virtual e dispositivos interativos.",
+        aboutHolding: "Uma Holding Estratégica",
+        aboutHoldingText: "Como controladora, a RollTwo.inc impulsiona o crescimento das suas subsidiárias por meio de investimentos estruturados, suporte tecnológico e gestão estratégica. O seu modelo operacional é colaborativo, permitindo sinergias entre os negócios para gerar soluções integradas, escaláveis e centradas no utilizador.",
+        aboutGlobal: "Presença Global, Visão de Futuro",
+        aboutGlobalText1: "Com operações e parcerias em diversos países, a RollTwo.inc mantém um olhar voltado para o futuro, investindo em sustentabilidade, segurança digital e impacto social. A empresa acredita que a tecnologia deve ser inclusiva, acessível e usada para construir um mundo mais conectado, criativo e inteligente.",
+        aboutGlobalText2: "RollTwo.inc — Tecnologia que move ideias, conecta pessoas e transforma o amanhã."
+    }
+};
+
+// Função para atualizar o texto da página
+function updateLanguage(lang) {
+    const elements = document.querySelectorAll('[data-translate]');
+    elements.forEach(element => {
+        const key = element.getAttribute('data-translate');
+        if (translations[lang][key]) {
+            element.textContent = translations[lang][key];
+        }
+    });
+    
+    // Salvar preferência de idioma
+    localStorage.setItem('preferredLanguage', lang);
+    
+    // Atualizar o atributo lang do HTML
+    document.documentElement.lang = lang;
+}
+
+// Inicialização
+document.addEventListener('DOMContentLoaded', () => {
+    const languageToggle = document.getElementById('language-toggle');
+    const languageDropdown = document.querySelector('.language-dropdown');
+    const languageLinks = document.querySelectorAll('.language-dropdown a');
+    
+    // Carregar idioma salvo ou usar padrão
+    const savedLanguage = localStorage.getItem('preferredLanguage') || 'pt';
+    updateLanguage(savedLanguage);
+    
+    // Toggle do dropdown
+    languageToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        languageDropdown.classList.toggle('show');
+    });
+    
+    // Fechar dropdown ao clicar fora (reforçado)
+    document.addEventListener('click', (e) => {
+        setTimeout(() => {
+            if (!languageToggle.contains(e.target) && !languageDropdown.contains(e.target)) {
+                languageDropdown.classList.remove('show');
+            }
+        }, 50);
+    });
+
+    // Fechar dropdown ao clicar em um link (reforçado)
+    languageLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const lang = link.getAttribute('data-lang');
+            updateLanguage(lang);
+            setTimeout(() => {
+                languageDropdown.classList.remove('show');
+            }, 50);
+        });
+    });
+
+    // Prevenir que o clique no dropdown feche o menu
+    languageDropdown.addEventListener('click', (e) => {
+        e.stopPropagation();
+    });
+}); 
